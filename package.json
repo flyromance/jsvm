@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "node scripts/build.js pro"
+    "build": "node scripts/build.js pro",
+    "dev": "node scripts/build.js dev"
   },
   "repository": {
     "type": "git",
@@ -45,5 +46,10 @@
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.8",
     "wrap-ansi": "^3.0.1"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ]
   }
 }

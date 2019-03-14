@@ -28,7 +28,7 @@ Object.assign(console, {
 
 const config = {
   mode: env,
-  target: "node",
+  target: "web",
   entry: {
     jsvm: "./src/index.ts"
   },
@@ -104,6 +104,7 @@ const compiledHandler = (err, stats) => {
 
   if (env === "development") {
     console.log("\nStart Test...");
+    return;
     child_process.exec(`ava --verbose`, (error, stdout, stderr) => {
       console.log("Test end");
       if (error) {

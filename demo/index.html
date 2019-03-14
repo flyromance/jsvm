@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="../dist/jsvm.js"></script>
+    <script>
+      // jsvm
+      var executer = new jsvm.default({ name: 123 });
+
+      // https://astexplorer.net/
+      // 选择babylon编译，选择json，取出program对象
+      var ast = {
+        type: "Program",
+        start: 0,
+        end: 49,
+        loc: {
+          start: {
+            line: 1,
+            column: 0
+          },
+          end: {
+            line: 3,
+            column: 19
+          }
+        },
+        sourceType: "module",
+        body: [
+          {
+            type: "VariableDeclaration",
+            start: 0,
+            end: 10,
+            loc: {
+              start: {
+                line: 1,
+                column: 0
+              },
+              end: {
+                line: 1,
+                column: 10
+              }
+            },
+            declarations: [
+              {
+                type: "VariableDeclarator",
+                start: 4,
+                end: 9,
+                loc: {
+                  start: {
+                    line: 1,
+                    column: 4
+                  },
+                  end: {
+                    line: 1,
+                    column: 9
+                  }
+                },
+                id: {
+                  type: "Identifier",
+                  start: 4,
+                  end: 5,
+                  loc: {
+                    start: {
+                      line: 1,
+                      column: 4
+                    },
+                    end: {
+                      line: 1,
+                      column: 5
+                    }
+                  },
+                  name: "a"
+                },
+                init: {
+                  type: "Literal",
+                  start: 8,
+                  end: 9,
+                  loc: {
+                    start: {
+                      line: 1,
+                      column: 8
+                    },
+                    end: {
+                      line: 1,
+                      column: 9
+                    }
+                  },
+                  value: 1,
+                  rawValue: 1,
+                  raw: "1"
+                }
+              }
+            ],
+            kind: "var"
+          },
+          {
+            type: "ExpressionStatement",
+            start: 11,
+            end: 29,
+            loc: {
+              start: {
+                line: 2,
+                column: 0
+              },
+              end: {
+                line: 2,
+                column: 18
+              }
+            },
+            expression: {
+              type: "CallExpression",
+              start: 11,
+              end: 28,
+              loc: {
+                start: {
+                  line: 2,
+                  column: 0
+                },
+                end: {
+                  line: 2,
+                  column: 17
+                }
+              },
+              callee: {
+                type: "MemberExpression",
+                start: 11,
+                end: 22,
+                loc: {
+                  start: {
+                    line: 2,
+                    column: 0
+                  },
+                  end: {
+                    line: 2,
+                    column: 11
+                  }
+                },
+                object: {
+                  type: "Identifier",
+                  start: 11,
+                  end: 18,
+                  loc: {
+                    start: {
+                      line: 2,
+                      column: 0
+                    },
+                    end: {
+                      line: 2,
+                      column: 7
+                    }
+                  },
+                  name: "console"
+                },
+                property: {
+                  type: "Identifier",
+                  start: 19,
+                  end: 22,
+                  loc: {
+                    start: {
+                      line: 2,
+                      column: 8
+                    },
+                    end: {
+                      line: 2,
+                      column: 11
+                    }
+                  },
+                  name: "log"
+                },
+                computed: false
+              },
+              arguments: [
+                {
+                  type: "ThisExpression",
+                  start: 23,
+                  end: 27,
+                  loc: {
+                    start: {
+                      line: 2,
+                      column: 12
+                    },
+                    end: {
+                      line: 2,
+                      column: 16
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            type: "ExpressionStatement",
+            start: 30,
+            end: 49,
+            loc: {
+              start: {
+                line: 3,
+                column: 0
+              },
+              end: {
+                line: 3,
+                column: 19
+              }
+            },
+            expression: {
+              type: "CallExpression",
+              start: 30,
+              end: 48,
+              loc: {
+                start: {
+                  line: 3,
+                  column: 0
+                },
+                end: {
+                  line: 3,
+                  column: 18
+                }
+              },
+              callee: {
+                type: "MemberExpression",
+                start: 30,
+                end: 41,
+                loc: {
+                  start: {
+                    line: 3,
+                    column: 0
+                  },
+                  end: {
+                    line: 3,
+                    column: 11
+                  }
+                },
+                object: {
+                  type: "Identifier",
+                  start: 30,
+                  end: 37,
+                  loc: {
+                    start: {
+                      line: 3,
+                      column: 0
+                    },
+                    end: {
+                      line: 3,
+                      column: 7
+                    }
+                  },
+                  name: "console"
+                },
+                property: {
+                  type: "Identifier",
+                  start: 38,
+                  end: 41,
+                  loc: {
+                    start: {
+                      line: 3,
+                      column: 8
+                    },
+                    end: {
+                      line: 3,
+                      column: 11
+                    }
+                  },
+                  name: "log"
+                },
+                computed: false
+              },
+              arguments: [
+                {
+                  type: "BinaryExpression",
+                  start: 42,
+                  end: 47,
+                  loc: {
+                    start: {
+                      line: 3,
+                      column: 12
+                    },
+                    end: {
+                      line: 3,
+                      column: 17
+                    }
+                  },
+                  left: {
+                    type: "Identifier",
+                    start: 42,
+                    end: 43,
+                    loc: {
+                      start: {
+                        line: 3,
+                        column: 12
+                      },
+                      end: {
+                        line: 3,
+                        column: 13
+                      }
+                    },
+                    name: "a"
+                  },
+                  operator: "+",
+                  right: {
+                    type: "Literal",
+                    start: 46,
+                    end: 47,
+                    loc: {
+                      start: {
+                        line: 3,
+                        column: 16
+                      },
+                      end: {
+                        line: 3,
+                        column: 17
+                      }
+                    },
+                    value: 1,
+                    rawValue: 1,
+                    raw: "1"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      };
+
+      executer.execute(ast);
+    </script>
+  </body>
+</html>
