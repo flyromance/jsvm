@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "strictNullChecks": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "../dist",
+    "noImplicitThis": false,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
